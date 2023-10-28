@@ -10,7 +10,9 @@ class HomePage extends StatelessWidget {
     String name = "moksh";
     return Scaffold(
       appBar: AppBar(
-        title: Text("Connect App"),
+        title: Text(
+          "Connect App",
+        ),
       ),
       body: Center(
         child: Container(
