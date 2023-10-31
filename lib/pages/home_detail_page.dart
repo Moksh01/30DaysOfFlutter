@@ -37,7 +37,7 @@ class HomeDetailPage extends StatelessWidget {
                     StadiumBorder(),
                   )),
               child: "Add to cart".text.make(),
-            ).wh(120, 50)
+            )
           ],
         ).p32(),
       ),

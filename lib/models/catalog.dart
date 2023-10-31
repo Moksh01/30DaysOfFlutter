@@ -4,9 +4,13 @@ import 'dart:convert';
 import 'package:flutter/foundation.dart';
 
 class CatalogModel {
+  static final catModel = CatalogModel._internal();
+  CatalogModel._internal();
+  factory CatalogModel() => catModel;
+
   static List<Item> items = [];
   //get item by id
- Item getById(int id) =>
+  Item getById(int id) =>
       // ignore: null_closures
       items.firstWhere((element) => element.id == id, orElse: null);
   getByPosition(int pos) => items[pos];
